@@ -1,0 +1,383 @@
+$primary: #04b418;
+
+header {
+  background: url("../assets/hero-jpg.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.user-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.user-login img {
+  max-width: 100%;
+}
+
+.nav-links {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  border-bottom: 2px solid yellow;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  padding: 1rem 0rem;
+}
+
+.site-main-wrapper {
+  position: relative;
+}
+
+.hamberger {
+  position: absolute;
+  top: 50%;
+  margin-top: 2rem;
+  z-index: 11;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 2rem;
+  font-size: 10rem;
+}
+
+.hamberger img {
+  width: 100%;
+  top: 50%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  font-weight: 700;
+  background: #d3f9d8;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 5rem;
+  transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.mobile-nav a {
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+
+.open {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.times {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.times img {
+  width: 40px;
+}
+
+.mobile-nav ul {
+  margin-top: 10rem;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mobile-nav ul a {
+  color: #002901;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+// ===================================================
+//  Sale Section
+// ===================================================
+
+.sale-section {
+  padding: 4.6rem 0rem;
+}
+.sale-option {
+  background: $primary;
+  padding: 4.8rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sale-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.sale-buttons {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+// select{
+//   display: inline-block;
+//   width: 15%;
+//   padding: 1rem 2rem;
+//   border-radius: 15px;
+// }
+
+.drop-options {
+  font-size: 1.8rem;
+  background: #fff;
+  color: #555;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 0.75rem 3rem;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin: o auto;
+}
+
+@media screen and (max-width: 69em) {
+  header {
+    // height: 90vh;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .nav-links {
+    font-size: 1.6rem;
+  }
+  .user-login {
+    padding: 2rem;
+  }
+
+  .sale-option {
+    padding: 3rem 4.8rem;
+  }
+
+  .sale-option .btn {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 58em) {
+  .swiper-slide {
+    height: 70vh !important;
+    text-align: center;
+  }
+  .nav-links {
+    font-size: 1.6rem;
+  }
+  .nav-wrapper {
+    gap: 2rem;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 54em) {
+  header #main-nav {
+    display: none;
+  }
+  .swiper-slide h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.8rem;
+  }
+  .phonelogo {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .hamberger {
+    display: block;
+    top: 3px;
+    left: 20px;
+    z-index: 11;
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .hamberger {
+    top: 3px;
+    right: 50px;
+    z-index: 11;
+  }
+}
+
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    height: 80vh;
+  }
+  .swiper-slide {
+    height: 60vh !important;
+    text-align: center;
+  }
+
+  .user-login img {
+    width: 7%;
+  }
+  .swiper-slide h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.6rem;
+  }
+  .hamberger {
+    top: 3px;
+    left: 20px;
+    z-index: 11;
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .top-bar {
+    width: 80%;
+    position: relative;
+  }
+  .top-bar a {
+    margin: 0;
+  }
+  .logo img {
+    max-width: 70%;
+    margin-left: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (max-width: 27em) {
+  header {
+    height: 80vh;
+  }
+  .swiper-slide {
+    height: 57vh !important;
+    text-align: center;
+  }
+
+  .sale-option {
+    padding: 2rem 1.8rem;
+  }
+
+  .sale-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .drop-options {
+    width: 100%;
+  }
+}
